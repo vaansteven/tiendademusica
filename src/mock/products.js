@@ -44,7 +44,7 @@ export const products = [
         id: 6,
         descuento: 10,
         title: 'Piooneer HDJ X10',
-        price: 400,
+        price: 300,
         stock: 10,
         category: 'auriculares',
         description:'Manténgase al tanto de su juego con los auriculares supraaurales insignia HDJ-X10. Refinados con aportes de DJ profesionales para servirte en festivales, clubes y en cualquier otro lugar, cambiarán la forma en que experimentas la música. Al producir un sonido de alta resolución que va de 5 Hz a 40 kHz gracias a un nuevo controlador de 50 mm, son ideales para el monitoreo de DJ, ya que brindan una separación clara de los canales izquierdo y derecho, así como una mayor separación de tonos graves intensos y frecuencias medias y altas nítidas.Diseñados para ser flexibles y portátiles durante largos períodos de tiempo, su mecanismo giratorio le permite usarlos cómodamente, de la forma que prefiera. Las almohadillas de cuero de poliuretano y la almohadilla de la banda para la cabeza son resistentes al deterioro gracias al uso de un nano revestimiento, por lo que puede limpiar fácilmente el sudor y la suciedad. No se preocupe por golpes y golpes durante el transporte: estos auriculares para DJ pueden manejar condiciones severas y un uso intensivo. Incluso han superado la prueba de choque estándar militar de EE. UU.* para garantizar que resistirán todo lo que te depare la gira.',
@@ -52,9 +52,9 @@ export const products = [
     },
     {
         id: 7,
-        descuento: 100,
+        descuento: 5,
         title: 'Pulsera Ultra',
-        price: 20,
+        price: 15,
         stock: 100,
         category: 'merchandise',
         description:'Pulsera de silicona, impresa en laser logo y slogan del ULTRA Music Festival. Disponible en 10 colores. Cuál será el tuyo?',
@@ -67,6 +67,7 @@ export const products = [
     //     price: 1000,
     //     stock: 30,
     //     category: 'merchandise',
+    //     description: ',
     //     img: 'https://res.cloudinary.com/dobpipof2/image/upload/v1667438141/Music%20mind/Tomorrowland-merchandise-graphic-icon-sweater-the-music-essentials_jlgd4s.jpg',
     // },
     {
