@@ -1,29 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Main from './components/Main/Main';
+import ItemListContainer from './components/Main/ItemListContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ItemDetailContainer from './components/Main/ItemDetailContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <Navbar/>
-      <Main/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Esteban Marquez 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <BrowserRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route
+                    path="/category/:categoryName"
+                    element={<ItemListContainer />}
+                />
+                   <Route
+                    path="/item/:productId"
+                    element={<ItemDetailContainer />}
+                />
+               
+            </Routes>
+        </BrowserRouter>
+    );
+};
 
 export default App;
