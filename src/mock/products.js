@@ -3,7 +3,7 @@ export const products = [
     {
         id: 2,
         descuento: 10,
-        title: 'Denom MCX 8000',
+        title: 'Denon MCX 8000',
         price: 3500,
         stock: 15,
         category: 'consolas',

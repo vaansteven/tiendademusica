@@ -9,7 +9,7 @@ const ItemDetail = ({ item }) => {
             <article>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
-                <h3>${item.price}.-</h3>
+                <h3>${item.price}</h3>
                 <Contador stock={item.stock} onAdd={onAdd} />
             </article>
         </div>
