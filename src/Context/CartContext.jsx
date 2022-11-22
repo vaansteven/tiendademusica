@@ -48,9 +48,9 @@ const CartProvider = ({ children }) => {
     }
         //funcion para eliminar un solo producto,
 
-    const eliminarUno = () => {
+   // const eliminarUno = () => {
     
-    };
+    //};
 
 
     //funcion para sumar total $ del carrito
