@@ -11,11 +11,9 @@ const ItemListContainer = () => {
     useEffect(() => {
         getProducts(categoryName)
             .then((res) => {
-                console.log('item list contianer')
                 setItems(res);
             })
             .catch((error) => {
-                console.log(error);
             });
     }, [categoryName]);
 

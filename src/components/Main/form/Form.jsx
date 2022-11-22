@@ -13,7 +13,8 @@ const Form = () => {
         //         nombre: name,
         //         apellido: lastName,
         //         email: email,
-       //         numero de orden: orderCode,
+       //         numero de orden: orderCode, 
+       //         fecha de orden:date,
         //     },
         // };
                 
@@ -26,8 +27,14 @@ const Form = () => {
     
 
     useEffect(() => {
-        
+        console.log("Se creo el componente")
+        window.addEventListener('click', handleChange)
+
         return () => {
+            console.log("Se borro el componente")
+
+            window.removeEventListener('click', handleChange)
+
         };
     });
 

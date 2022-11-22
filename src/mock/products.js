@@ -13,7 +13,7 @@ export const products = [
     {
         id: 3,
         descuento: 10,
-        title: 'Consola Piooneer ddj sx2',
+        title: 'Consola Pioneer ddj sx2',
         price: 2000,
         stock: 10,
         category: 'consolas',
@@ -43,7 +43,7 @@ export const products = [
     {
         id: 6,
         descuento: 10,
-        title: 'Piooneer HDJ X10',
+        title: 'Pioneer HDJ X10',
         price: 300,
         stock: 10,
         category: 'auriculares',

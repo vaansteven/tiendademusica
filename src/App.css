@@ -198,6 +198,7 @@ main {
   color: white;
   background: rgb(52, 52, 52);
   font-size: 15px;
+  cursor: pointer;
 }
 
 .counter p {
