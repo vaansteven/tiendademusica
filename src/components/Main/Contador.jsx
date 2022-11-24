@@ -19,9 +19,7 @@ const Contador = ({ stock, onAdd }) => {
 
     const agregar = () => {
         onAdd(cantidad);
-        //setTimeout(()=>{
-        //navigate('/cart');
-        //}, 5000)
+        
     };
 
     return (

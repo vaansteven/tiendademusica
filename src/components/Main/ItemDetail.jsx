@@ -6,9 +6,10 @@ const ItemDetail = ({ item }) => {
   const { addToCart } = useContext(CartContext);
   const onAdd = (cantidad) => {
     addToCart(item, cantidad);
+    console.log ({item, cantidad})
   };
 
-  return (
+  return (   
     <div className="detail">
       <img src={item.img} alt={item.title} />
       <article>

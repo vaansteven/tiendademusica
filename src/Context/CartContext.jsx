@@ -4,19 +4,14 @@ export const CartContext= createContext ();
 
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    //variables
-     //crear copia del cart
-    // const copia = [...cart]
-    //const copia = cart.map((prod)=> prod )
-    //console.log(props.children);
-     //funciones
+  
+     
+     //Agregar al carrito
+
     const addToCart = (item, cantidad) => {
-        //SPREAD --> ...item --> id: 1, title: 'Camisa', price: 200
-        //console.log({ ...item, cantidad });
         console.log(cantidad)
         if (isInCart(item.id)) {
-            //sumo la cantidad
-            //alert('Ya está en el carrito sumale la cantidad flaco 🚨');
+           
             const it = cart.map(i => i.id === +item.id ? {...i, cantidad:  cantidad + i.cantidad} : i);
             console.log(it)
             setCart([...it]);
@@ -34,10 +29,16 @@ const CartProvider = ({ children }) => {
 
     //funcion para sumar la cantidad de un mismo producto
 
+     //funcion para eliminar un solo producto,
+    const removeOneProduct = (id) => setCart(cart.filter(item=> item.id !== id));
+
     //funcion para vaciar el carrito
     const deleteAll = () => {
         setCart([]);
     };
+
+
+//funcion para sumar unidades totales del carrito
 
     const cantElements = () => {
         let counter = 0;
@@ -46,22 +47,25 @@ const CartProvider = ({ children }) => {
 
         return counter;
     }
-        //funcion para eliminar un solo producto,
-
-   // const eliminarUno = () => {
-    
-    //};
-
 
     //funcion para sumar total $ del carrito
-    //variables
+
+    const totalAmount= ()=> {
+        let count= 0
+        const carritoCopia = [...cart]
+        carritoCopia.forEach((elem) =>{
+            count=count + elem.cantidad * elem.price;
+        });
+        return count;
+    };
+
+    
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, deleteAll, cantElements }}>
+        <CartContext.Provider value={{ cart, addToCart, deleteAll, cantElements,removeOneProduct,totalAmount }}>
             {children}
         </CartContext.Provider>
     );
 };
 
 export default CartProvider;
-

@@ -1,5 +1,6 @@
-import React, { useContext } from 'react';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import React, { useContext } from 'react'; import { AiOutlineShoppingCart } from 'react-icons/ai';
+//import {  BsTrash } from 'react-icons/bs';
+//<BsTrash />
 import { CartContext } from "../../Context/CartContext";
 
 
@@ -8,7 +9,8 @@ const CartWidget = () => {
 
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
-            <AiOutlineShoppingCart size={27} color="red" />
+            {<AiOutlineShoppingCart size={27} color="red" />}
+            
             <span>{cantElements()}</span>
         </div>
     );
