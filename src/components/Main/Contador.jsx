@@ -1,9 +1,7 @@
 import { useState } from 'react';
-//import { useNavigate } from 'react-router-dom';
 
 const Contador = ({ stock, onAdd }) => {
     const [cantidad, setCantidad] = useState(1);
-    //const navigate = useNavigate();
 
     const sumar = () => {
         if (cantidad < stock) {

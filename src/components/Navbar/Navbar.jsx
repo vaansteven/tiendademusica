@@ -1,8 +1,32 @@
 import React from "react";
 import CartWidget from "./CartWidget";
 import { NavLink, Link } from "react-router-dom";
+import { useEffect } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { useState } from 'react';
+import { db } from '../../services/firebaseConfig';
 
 const Navbar = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        const catCollection = collection(db, 'categorias');
+        getDocs(catCollection)
+            .then((res) => {
+                const secciones = res.docs.map((prod) => {
+                    return {
+                        id: prod.id,
+                        ...prod.data(),
+                    };
+                });
+                setCategories(secciones);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+
+
   return (
     <nav className="navbar">
       <h1 className="title">
@@ -11,8 +35,17 @@ const Navbar = () => {
         </Link>
       </h1>
       <ul>
-        <li>
-          <NavLink className="links" to="/category/consolas">
+        
+        {categories.map((cat) => (
+                    <NavLink
+                        key={cat.id}
+                        className="links"
+                        to={`/categoria/${cat.path}`}
+                    >
+                        {cat.title}
+                    </NavLink>
+                ))}
+          {/* <NavLink className="links" to="/category/consolas">
             Consolas
           </NavLink>
         </li>
@@ -26,14 +59,16 @@ const Navbar = () => {
             Merchandise
           </NavLink>
         </li>
-        <li>
+        <li> */}
+        </ul>
           <Link className="links" to="/cart">
             <CartWidget />
           </Link>
-        </li>
-      </ul>
+        
+      
     </nav>
   );
 };
+
 
 export default Navbar;

@@ -142,6 +142,11 @@ main {
   padding: 4px;
   border-radius: 8px;
   color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+  font-weight: 500;
+
 }
 
 .details {
@@ -151,6 +156,8 @@ main {
   padding: 5px;
   margin: 20px;
   border-radius: 3px;
+  font-weight: 400;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
 }
 
 /* Item detail */
@@ -161,8 +168,10 @@ main {
   align-items: flex-start;
 }
 .detail img {
-  max-width: 100vh;
-  max-height: 85vh;
+  max-width: 90vh;
+  max-height: 80vh;
+  margin-top: 30px;
+
 }
 
 .detail article {
@@ -172,6 +181,7 @@ main {
 }
 .detail article h3 {
   margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 5px;
   font-size: 25px;
 }
@@ -264,3 +274,34 @@ svg.trashbinall:hover {
   transition: all 0.5s;
   
 }
+svg.trashbinall{
+  color:rgb(220, 8, 8);
+  cursor: pointer;
+  float: right;
+  margin-right: 20vh;
+   margin-top: 10px;
+  
+  }
+  
+  svg.trashbinall:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    
+  }
+    path {
+    color:rgb(220, 8, 8);
+    cursor: pointer;
+    text-decoration: none;
+    }
+    
+    path:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+      
+    }
+    .emptycart{
+      text-align: center;
+      justify-content: center;
+      margin-top: 40vh;
+      font-size: 23px; 
+    }
