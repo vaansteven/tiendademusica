@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Music Mind
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto se realizó para el proyecto final del curso de ReactJS de Coderhouse.Se trata de un e-commerce que vende productos de música electrónica, como consolas, auriculares, merchandise. 
 
-## Available Scripts
 
-In the project directory, you can run:
+Link para ver el proyecto deployado
+[mi-tienda](http://mi-tienda.netlify.com)
 
-### `npm start`
+## Librerias utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   [react-router-dom](https://reactrouter.com/en/main) 
+-   [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLsyx4yFca2Ail9OLSvw4iddQsex-7NaPJ6pog7FGJNEd6F4bL96ubcaApZpEALw_wcB&gclsrc=aw.ds)
+-   [React-spinners](https://www.npmjs.com/package/react-spinners)
+-   [React-icons](https://react-icons.github.io/react-icons/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLsyx4yFca2Ail9OLSvw4iddQsex-7NaPJ6pog7FGJNEd6F4bL96ubcaApZpEALw_wcB&gclsrc=aw.ds) :  fue utilizado en esrte proyecto para crear nuestra base de datos y consumirla en el proyecto. También para alojar datos creados a partir de  las órdenes de compra como son los datos de nuestros clientes.
 
-### `npm test`
+ Se destaca de Firebase las bases de datos en tiempo real. Estas se alojan en la nube, son No SQL y almacenan los datos como JSON. Permiten alojar y disponer de los datos e información de la aplicación en tiempo real, manteniéndolos actualizados aunque el usuario no realice ninguna acción.
+Firebase envía automáticamente eventos a las aplicaciones cuando los datos cambian, almacenando los datos nuevos en el disco. Aunque no hubiera conexión por parte de un usuario, sus datos estarían disponibles para el resto y los cambios realizados se sincronizarían una vez restablecida la conexión.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[React-spinners](https://www.npmjs.com/package/react-spinners)
+: Los utilcé para mejorar la experiencia de usuario en los tiempos de espera en que se renderizan los datos a mostrar. 
 
-### `npm run build`
+  [React-icons](https://react-icons.github.io/react-icons/)
+  :Fueron utilizados para los íconos del proyecto como son el carrito de compras en el navbar. También fue utilizado en el cart al momento de borrrar items de compra, volver al home cuando el carro estaba vacío.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades del proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pasos para levantar el proyecto de manera local
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  Clonar el repositorio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/vaansteven/tiendademusica.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Instalar las dependencias
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Correr el proyecto en el navegador
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

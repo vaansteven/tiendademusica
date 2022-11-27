@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Item from "./Item";
 import { getDocs, query, where } from "firebase/firestore";
 import { collectionProd } from "../../services/firebaseConfig";
+import { SpinnerCircularSplit } from "spinners-react";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -36,9 +37,15 @@ const ItemListContainer = () => {
 
   if (loading) {
     return (
-      <div className="container">
-        <h1> cargando...</h1>
-      </div>
+      <div className="spinner">
+      <SpinnerCircularSplit
+        size={100}
+        thickness={180}
+        speed={120}
+        color="rgba(172, 57, 57, 1)"
+        secondaryColor="rgba(0, 0, 0, 0.99)"
+      />
+    </div>
     );
   }
 

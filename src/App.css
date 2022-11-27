@@ -317,3 +317,10 @@ svg.trashbinall{
       float:right;
     
     }
+    .spinner{
+      display: flex;
+      justify-content: center;
+      margin-top: 30vh;
+    }
+
+    
