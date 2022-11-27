@@ -44,6 +44,19 @@ Firebase envía automáticamente eventos a las aplicaciones cuando los datos cam
 
 
 
+## Funcionalidad del proyecto
+
+
+-Ampliar el detalle de cada producto.
+
+-Agregar la cantidad deseada de productos al carrito.
+
+-Visualizar los productos en el carrito, así como el total de unidades y también el precio total.
+
+-Hacer el Checkout para generar la orden de compra ficticia, que se 
+-enviará a Firebase con los datos ingresados.
+
+-Buscar por código la Orden de Compra generada y visualizar los productos que contiene.
 
 
 ## Pasos para levantar el proyecto de manera local
