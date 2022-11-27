@@ -2,6 +2,24 @@
 
 Este proyecto se realizó para el proyecto final del curso de ReactJS de Coderhouse.Se trata de un e-commerce que vende productos de música electrónica, como consolas, auriculares, merchandise. 
 
+Link para ver el proyecto aquí
+[Music Mind](https://music-mind.netlify.app)
+
+Home
+![](https://res.cloudinary.com/dobpipof2/image/upload/v1669584317/Music%20mind/Captura_de_Pantalla_2022-11-27_a_la_s_18.19.02_duuay0.png)
+
+Categorias
+
+![](https://res.cloudinary.com/dobpipof2/image/upload/v1669584317/Music%20mind/Captura_de_Pantalla_2022-11-27_a_la_s_18.20.39_b2gyc5.png)
+
+Detalle de producto
+![](https://res.cloudinary.com/dobpipof2/image/upload/v1669584317/Music%20mind/Captura_de_Pantalla_2022-11-27_a_la_s_18.21.18_giev5e.png)
+
+CART
+![](https://res.cloudinary.com/dobpipof2/image/upload/v1669584317/Music%20mind/Captura_de_Pantalla_2022-11-27_a_la_s_18.22.00_e6x3fk.png)
+
+
+
 
 Link para ver el proyecto deployado
 [mi-tienda](http://mi-tienda.netlify.com)
@@ -24,7 +42,8 @@ Firebase envía automáticamente eventos a las aplicaciones cuando los datos cam
   [React-icons](https://react-icons.github.io/react-icons/)
   :Fueron utilizados para los íconos del proyecto como son el carrito de compras en el navbar. También fue utilizado en el cart al momento de borrrar items de compra, volver al home cuando el carro estaba vacío.
 
-## Funcionalidades del proyecto
+
+
 
 
 ## Pasos para levantar el proyecto de manera local
