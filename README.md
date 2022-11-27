@@ -21,9 +21,6 @@ CART
 
 
 
-Link para ver el proyecto deployado
-[mi-tienda](http://mi-tienda.netlify.com)
-
 ## Librerias utilizadas
 
 -   [react-router-dom](https://reactrouter.com/en/main) 
