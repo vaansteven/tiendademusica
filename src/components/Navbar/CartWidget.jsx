@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'; 
-import { AiOutlineShoppingCart } from 'node_modules/node_modules/react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { CartContext } from "../../Context/CartContext";
 
 

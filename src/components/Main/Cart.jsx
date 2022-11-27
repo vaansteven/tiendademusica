@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import { FaTrash } from "node_modules/node_modules/react-icons/fa";
-import { TbTrashX } from "node_modules/node_modules/react-icons/tb";
-import { FaHome } from "node_modules/node_modules/react-icons/fa";
+import { FaTrash } from "react-icons/fa";
+import { TbTrashX } from "react-icons/tb";
+import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
@@ -40,6 +40,7 @@ const Cart = () => {
           onClick={() => deleteAll()}
         />
       }
+      <Link className="finish"to='/checkout'> Finalizar compra</Link>
     </>
   );
 };
