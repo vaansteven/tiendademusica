@@ -305,6 +305,7 @@ svg.trashbinall{
       margin-top: 30vh;
       margin: bottom 20px; 
       font-size: 23px; 
+      text-decoration: none;
     }
     .finish {
       background-color:rgb(220, 8, 8);
