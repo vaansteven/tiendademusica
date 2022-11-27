@@ -68,6 +68,7 @@ const Form = () => {
       }}
     >
       <form action="" onSubmit={enviarDatos}>
+      <h4 className="emptycart">Ingrese sus datos para finalizar su compra</h4>
         <input
           type="text"
           placeholder="Nombre"
