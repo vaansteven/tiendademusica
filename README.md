@@ -31,6 +31,10 @@ Link para ver el proyecto deployado
 -   [React-spinners](https://www.npmjs.com/package/react-spinners)
 -   [React-icons](https://react-icons.github.io/react-icons/)
 
+
+[react-router-dom](https://reactrouter.com/en/main): 
+Se utilizó para crear las rutas de navegación de la página.
+
  [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAsoycBhC6ARIsAPPbeLsyx4yFca2Ail9OLSvw4iddQsex-7NaPJ6pog7FGJNEd6F4bL96ubcaApZpEALw_wcB&gclsrc=aw.ds) :  fue utilizado en esrte proyecto para crear nuestra base de datos y consumirla en el proyecto. También para alojar datos creados a partir de  las órdenes de compra como son los datos de nuestros clientes.
 
  Se destaca de Firebase las bases de datos en tiempo real. Estas se alojan en la nube, son No SQL y almacenan los datos como JSON. Permiten alojar y disponer de los datos e información de la aplicación en tiempo real, manteniéndolos actualizados aunque el usuario no realice ninguna acción.
