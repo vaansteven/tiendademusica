@@ -104,7 +104,7 @@ const Form = () => {
           onChange={handleChange}
           value={data.email2}
         />
-        <button disabled={data.email1!==data.email2} >Enviar</button>
+        <button disabled={data.email1==="" || data.email2==="" || data.email1!==data.email2} >Enviar</button>
       </form>
     </div>
   );
